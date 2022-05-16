@@ -1,0 +1,82 @@
+@import "./../../variables.less";
+.main-container{
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 240px);
+        gap:  25px;
+        place-content:  center;
+        margin-top: 30px;
+        .product-card{
+            width: 240px;
+            img{
+                width: 240px;
+                height: 240px;
+                border-radius: 20px;
+                object-fit: cover;
+            }
+            .product-info{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                figure{
+                    margin: 0px;
+                    position: relative;
+                    .badge {
+                        position: absolute;
+                        top: 0;
+                        background: #034732;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        padding: 2px;
+                    }
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 15px;
+                    }
+                }
+                div p:nth-child(1){
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+                 div p:nth-child(2){
+                    font-size: 20px;
+                }
+            }
+            .botones{
+                display: flex;
+                width: 100%;
+                button{
+                    background-color: @verde-carrito;
+                    color: @color-links;
+                    height: 30px;
+                    border-radius: 20px;
+                    box-shadow: none;
+                    border-color: @color-fondo;
+                    font-size: 25px;
+                    padding-top: 0px;
+                    font-weight: 500;
+                    width: 45%;
+                    margin-left: 10px;
+                }
+            }
+            .agregar{
+                background-color: @verde-carrito;
+                    color: @color-links;
+                    height: 30px;
+                    border-radius: 20px;
+                    box-shadow: none;
+                    border-color: @color-fondo;
+                    font-size: 20px;
+                    font-weight: 500;
+                    width: 100%;
+                    margin-top: 5px;;
+            }
+        }
+    }
+}
