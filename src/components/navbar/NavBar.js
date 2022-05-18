@@ -9,7 +9,7 @@ const NavBar = () => {
             <nav>
                 <ul>
                     <a href="#"><img src="./icon.png" /></a>
-                    {categorias.map(categoria => <li><a href="#">{categoria}</a></li>)}
+                    {categorias && categorias.map((item, i) => <li key={i}><a href="#">{item}</a></li>)}
                     <CartWidget />
                 </ul>
             </nav>
