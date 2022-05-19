@@ -13,21 +13,21 @@ const ItemListContainer = (props)=> {
             {
                 nombre: "Sopita de Brócoli",
                 imagen: "./brocoli.jpg",
-                stock: 5,
+                stock: 4,
                 inicial: 1,
                 precio:"$280"
             },
             {
                 nombre: "Sopita de Verduras",
                 imagen: "./verduritas.jpg",
-                stock: 5,
+                stock: 9,
                 inicial: 1,
                 precio:"$260"
             },
             {
                 nombre: "Sopita de Tomate",
                 imagen: "./tomate.jpg",
-                stock: 5,
+                stock: 11,
                 inicial: 1,
                 precio:"$290"
 
@@ -35,20 +35,20 @@ const ItemListContainer = (props)=> {
             {
                 nombre: "Sopita de Lentejas",
                 imagen: "./lentejas.jpg",
-                stock: 5,
+                stock:  9,
                 inicial: 1,
                 precio:"$230"
             },
             {
                 nombre: "Sopita con Carne",
                 imagen: "./carne.jpg",
-                stock: 5,
+                stock: 8,
                 inicial: 1,
                 precio:"$300"
             }
             ]
             setProductos(db);
-        }, 3000);
+        }, 1000);
     }, []); 
 
     return (

@@ -1,22 +1,37 @@
-.main-container .card-container .product-card {
+.ProductList .main-container .card-container .product-card {
   width: 240px;
 }
-.main-container .card-container .product-card img {
+.ProductList .main-container .card-container .product-card img {
   width: 240px;
   height: 240px;
   border-radius: 20px;
   object-fit: cover;
 }
-.main-container .card-container .product-card .product-info {
+.ProductList .main-container .card-container .product-card .product-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.main-container .card-container .product-card .product-info figure {
+.ProductList .main-container .card-container .product-card .product-info div p:nth-child(1) {
+  font-weight: bold;
+  font-size: 18px;
+}
+.ProductList .main-container .card-container .product-card .product-info div p:nth-child(2) {
+  font-size: 20px;
+}
+.ProductList .contadores {
+  flex-direction: column;
+}
+.ProductList .contadores figure {
+  margin-top: -60px !important;
+  margin-bottom: 20px;
+  align-self: self-end;
+  display: flex;
+  justify-content: flex-end;
   margin: 0px;
   position: relative;
 }
-.main-container .card-container .product-card .product-info figure .badge {
+.ProductList .contadores figure .badge {
   position: absolute;
   top: 0;
   background: #034732;
@@ -29,24 +44,24 @@
   color: white;
   padding: 2px;
 }
-.main-container .card-container .product-card .product-info figure img {
+.ProductList .contadores figure img {
   width: 50px;
   height: 50px;
   border-radius: 15px;
 }
-.main-container .card-container .product-card .product-info div p:nth-child(1) {
+.ProductList .contadores div p:nth-child(1) {
   font-weight: bold;
   font-size: 18px;
 }
-.main-container .card-container .product-card .product-info div p:nth-child(2) {
+.ProductList .contadores div p:nth-child(2) {
   font-size: 20px;
 }
-.main-container .card-container .product-card .botones {
+.ProductList .contadores .botones {
   display: flex;
   width: 100%;
   justify-content: center;
 }
-.main-container .card-container .product-card .botones button {
+.ProductList .contadores .botones button {
   background-color: #3bb44b;
   color: #034732;
   height: 25px;
@@ -61,12 +76,12 @@
   align-self: center;
   justify-content: center;
 }
-.main-container .card-container .product-card .contenedor-boton {
+.ProductList .contadores .contenedor-boton {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.main-container .card-container .product-card .contenedor-boton .agregar {
+.ProductList .contadores .contenedor-boton .agregar {
   background-color: #3bb44b;
   color: #034732;
   height: 25px;

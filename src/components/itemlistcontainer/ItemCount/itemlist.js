@@ -1,6 +1,7 @@
 import React from 'react';
 import Item from './item';
-import './itemlist.css'
+import ItemCount from './itemcount';
+import './itemlist.css';
 
 const ItemList = (props) => {
 	var itemsEnCarrito = 0;
@@ -15,11 +16,13 @@ const ItemList = (props) => {
                 <Item 
                     nombre={producto.nombre}
                     img={producto.imagen}
+                    precio={producto.precio}
+                />  
+                <ItemCount 
                     stock={producto.stock}
                     inicial={producto.inicial}
-                    precio={producto.precio}
                     onAdd={onAdd}
-                />  
+                />
             </div>
         ))}
         </div>
