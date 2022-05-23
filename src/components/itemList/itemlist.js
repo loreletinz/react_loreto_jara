@@ -1,6 +1,6 @@
 import React from 'react';
-import Item from './item';
-import ItemCount from './itemcount';
+import Item from './../item/item.js';
+import ItemCount from './../ItemCount/itemcount';
 import './itemlist.css';
 
 const ItemList = (props) => {
@@ -28,7 +28,5 @@ const ItemList = (props) => {
         </div>
     );
 }
-
-
 
 export default ItemList;

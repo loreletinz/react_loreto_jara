@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import './itemcount.css';
-import ItemCount from "./itemcount";
+import './../ItemCount/itemcount.css';
 
 export default function Item(props) {
     return (

@@ -1,5 +1,5 @@
 import React , { useState, useEffect } from "react";
-import ItemList from "./ItemCount/itemlist";
+import ItemList from './../itemList/itemlist';
 
 const ItemListContainer = (props)=> {
     var cart = 0;
@@ -30,7 +30,6 @@ const ItemListContainer = (props)=> {
                 stock: 11,
                 inicial: 1,
                 precio:"$290"
-
             },
             {
                 nombre: "Sopita de Lentejas",
@@ -52,8 +51,7 @@ const ItemListContainer = (props)=> {
     }, []); 
 
     return (
-        <ItemList productos={productos} onAdd={onAdd} />
-        
+        <ItemList productos={productos} onAdd={onAdd} />        
     ); 
 }
 
