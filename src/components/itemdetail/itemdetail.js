@@ -1,29 +1,24 @@
 import React from 'react';
-import ItemCount from '../Count/count';
 import "./itemdetail.css";
 
 const ItemDetail = (props) => {
-    var itemsEnCarrito = 0;
-	const onAdd = (items, itemTitle) => {
-		itemsEnCarrito = itemsEnCarrito + items;
-    }
-	return (
-		<div className="ProductoDetalle">
-            <section className="main-container">
-                <div className="card-container">
-                    <div className="product-card">
-                        <img src='./brocoli.jpg' />
-                        <div className="product-info">
+    
+	return (    
+		<div className="ProductoDetalle-detalle">
+            <section className="main-container-detalle">
+                <div className="card-container-detalle">
+                    <div className="product-card-detalle">
+                        <img src={props.imagen} alt="" />
+                        <div className="product-info-detalle">
                             <div>
-                                <p>$280</p>
-                                <p>Sopita de Brócoli</p>
+                                <p>{props.precio}</p>
+                                <p>{props.nombre}</p>
                             </div>
                         </div> 
                     </div>
                 </div>
-                <div className="descripcionDetalle">Sopita hecha con los productos mas frescos sarasa sarasa bla bla bla etc etc que lindo sarasa sarasa</div>
+                <div className="descripcionDetalle">{props.detalle}</div>
             </section>
-            <ItemCount />
 		</div>
 	);
 }

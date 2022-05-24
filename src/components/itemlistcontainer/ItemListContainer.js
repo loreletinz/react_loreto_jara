@@ -1,5 +1,6 @@
 import React , { useState, useEffect } from "react";
 import ItemList from './../itemList/itemlist';
+import db from "../../db/db";
 
 const ItemListContainer = (props)=> {
     var cart = 0;
@@ -9,50 +10,14 @@ const ItemListContainer = (props)=> {
     const [productos, setProductos] = useState([]); 
     useEffect (() => {
         setTimeout(() => {
-            const db = [
-            {
-                nombre: "Sopita de Brócoli",
-                imagen: "./brocoli.jpg",
-                stock: 4,
-                inicial: 1,
-                precio:"$280"
-            },
-            {
-                nombre: "Sopita de Verduras",
-                imagen: "./verduritas.jpg",
-                stock: 9,
-                inicial: 1,
-                precio:"$260"
-            },
-            {
-                nombre: "Sopita de Tomate",
-                imagen: "./tomate.jpg",
-                stock: 11,
-                inicial: 1,
-                precio:"$290"
-            },
-            {
-                nombre: "Sopita de Lentejas",
-                imagen: "./lentejas.jpg",
-                stock:  9,
-                inicial: 1,
-                precio:"$230"
-            },
-            {
-                nombre: "Sopita con Carne",
-                imagen: "./carne.jpg",
-                stock: 8,
-                inicial: 1,
-                precio:"$300"
-            }
-            ]
             setProductos(db);
         }, 1000);
     }, []); 
-
     return (
-        <ItemList productos={productos} onAdd={onAdd} />        
+        <>
+            <ItemList productos={productos} onAdd={onAdd} />
+        </>
     ); 
 }
 
-export default ItemListContainer;
+export default ItemListContainer;   

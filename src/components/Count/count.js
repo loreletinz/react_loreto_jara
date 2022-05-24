@@ -1,24 +1,24 @@
 import React, { useState } from "react";
 import './count.css';
 
-export default function ItemCount(props) {
-	const [itemCount, setItemCount] = useState(props.inicial);
+export default function Count(props) {
+	const [itemCount, setCount] = useState(props.inicial);
     function SumarItem() {
-		setItemCount(itemCount + 1);
+		setCount(itemCount + 1);
 	}
     function RestarItem(){
-        setItemCount(itemCount - 1);
+        setCount(itemCount - 1);
     }
     return (
         <>
             <div className="contadores">
-                <figure>
-                    <img className="carrito" src="./carrito.png" alt="" />
-                    <span className="badge">{itemCount}</span>
-                </figure>
                 <div className="botones">
                     <button disabled={props.inicial > itemCount -1} onClick={RestarItem}>-</button>
                     <button  disabled={props.stock - 1 < itemCount} onClick={SumarItem}>+</button>
+                    <figure>
+                        <img className="carrito" src="./../images/carrito.png" alt="" />
+                        <span className="badge">{itemCount}</span>
+                    </figure>
                 </div>
                 <div className="contenedor-boton">
                     <button className="agregar"> Agregar al carrito</button>
@@ -28,4 +28,4 @@ export default function ItemCount(props) {
     )
 }
 
-export {ItemCount} ;
+export {Count} ;

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import '../Count/count.css';
+import "./item.css"
 
 export default function Item(props) {
     return (
@@ -7,7 +9,7 @@ export default function Item(props) {
             <section className="main-container">
                 <div className="card-container">
                     <div className="product-card">
-                        <img src={props.img} alt="" />
+                        <Link  to={`/detalle/${props.id}`}><img src={props.img} alt="" /></Link>
                         <div className="product-info">
                             <div>
                                 <p>{props.precio}</p>

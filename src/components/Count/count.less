@@ -1,34 +1,8 @@
 @import "./../variables.less";
 
-.main-container{
-    .card-container{    
-        .product-card{
-            width: 240px;
-            img{
-                width: 240px;
-                height: 240px;
-                border-radius: 20px;
-                object-fit: cover;
-            }
-            .product-info{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                div p:nth-child(1){
-                    font-weight: bold;
-                    font-size: 18px;
-                }
-                div p:nth-child(2){
-                    font-size: 20px;
-                }
-            }   
-        }
-    }
-}
 .contadores{
     flex-direction: column;
     figure{
-        margin-top: -60px!important;
         margin-bottom: 20px;
         align-self: self-end;
         display: flex;
@@ -65,7 +39,7 @@
     .botones{
         display: flex;
         width: 100%;
-        justify-content: center;
+        justify-content: space-evenly;
         button{
             background-color: @verde-carrito;
             color: @color-links;
@@ -76,7 +50,7 @@
             font-size: 20px;
             padding-top: 0px;
             font-weight: 500;
-            width: 35%;
+            width: 25%;
             margin-left: 10px;
             align-self: center;
             justify-content: center;

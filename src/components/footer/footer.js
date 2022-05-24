@@ -22,8 +22,10 @@ export default function Footer() {
     }, []);
 
     return (
-        <footer>
-            <div> Hecho con verduritas y amor, hay {clima}° </div>
-        </footer>
+        <main>
+            <footer>
+                <div className="footer"> Hecho con ♥ y verduritas. Hay {clima}°, {clima <= 19 ? 'está fresquito, cuchareá.' : 'no está fresco, pero se cucharea igual.'} </div>
+            </footer>
+        </main>
     );
 }
