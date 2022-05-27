@@ -9,6 +9,7 @@ const ItemDetailContainer = (props) => {
     const {id} = useParams ()
     const [item, setItem] = useState([]);
     const [stock, setStock] = useState([])
+    const [loading, setLoading] = useState(true)
     const getItem = new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(db.find( item => item.id === Number(id) ))
@@ -23,8 +24,7 @@ const ItemDetailContainer = (props) => {
 	const onAdd = (items, itemTitle) => {
 		itemsEnCarrito = itemsEnCarrito + items;
     }
-
-
+console.log(item)
 	return(
         <div  className="detalle">
             <div className="ItemDetail">
@@ -35,8 +35,8 @@ const ItemDetailContainer = (props) => {
                     detalle={item.detalle}
                 />  
                 <Count 
-                    stock={props.stock}
-                    inicial={props.inicial}
+                    stock={item.stock}
+                    inicial={item.inicial}
                     onAdd={onAdd}
                 />
             </div>

@@ -23,4 +23,3 @@ export default function Item(props) {
     );
 }
 
-export {Item};

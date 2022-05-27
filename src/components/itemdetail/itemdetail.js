@@ -1,8 +1,9 @@
 import React from 'react';
 import "./itemdetail.css";
 
+
 const ItemDetail = (props) => {
-    
+
 	return (    
 		<div className="ProductoDetalle-detalle">
             <section className="main-container-detalle">
