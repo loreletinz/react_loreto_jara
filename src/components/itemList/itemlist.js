@@ -1,13 +1,9 @@
 import React from 'react';
-import Item from './../item/item.js';
-import Count from '../Count/count';
+import Item from '../item/Item.js';
+import Count from '../Count/Count';
 import './itemlist.css';
 
 const ItemList = (props) => {
-	var itemsEnCarrito = 0;
-	const onAdd = (items, itemTitle) => {
-		itemsEnCarrito = itemsEnCarrito + items;
-    }
     return(
         <div  className="ProductList">
         {props.productos.map((producto) => (
@@ -17,12 +13,9 @@ const ItemList = (props) => {
                     nombre={producto.nombre}
                     img={producto.imagen}
                     precio={producto.precio}
-                />  
-                <Count 
                     stock={producto.stock}
                     inicial={producto.inicial}
-                    onAdd={onAdd}
-                />
+                />  
             </div>
         ))}
         </div>

@@ -5,8 +5,9 @@ const db = [
         imagen: "./../images/brocoli.jpg",
         stock: 4,
         inicial: 1,
-        precio:"$280",
-        detalle: "Sopita hecha con los productos mas frescos sarasa sarasa bla bla bla etc etc que lindo sarasa sarasa"
+        precio: "$280",
+        detalle: "Sopita hecha con los productos mas frescos sarasa sarasa bla bla bla etc etc que lindo sarasa sarasa",
+        categoria: "novegana",
     },
     {
         id: 2,
@@ -14,8 +15,9 @@ const db = [
         imagen: "./../images/verduritas.jpg",
         stock: 9,
         inicial: 1,
-        precio:"$260",
-        detalle: "Sopita hecha con los productos mas frescos sarasa sarasa bla bla bla etc etc que lindo sarasa sarasa"
+        precio: "$260",
+        detalle: "Sopita hecha con los productos mas frescos sarasa sarasa bla bla bla etc etc que lindo sarasa sarasa",
+        categoria: "vegana",
     },
     {
         id: 3,
@@ -23,17 +25,19 @@ const db = [
         imagen: "./../images/tomate.jpg",
         stock: 11,
         inicial: 1,
-        precio:"$290",
-        detalle: "Sopita hecha con los productos mas frescos sarasa sarasa bla bla bla etc etc que lindo sarasa sarasa"
+        precio: "$290",
+        detalle: "Sopita hecha con los productos mas frescos sarasa sarasa bla bla bla etc etc que lindo sarasa sarasa",
+        categoria: "vegana",
     },
     {
         id: 4,
         nombre: "Sopita de Lentejas",
         imagen: "./../images/lentejas.jpg",
-        stock:  9,
+        stock: 9,
         inicial: 1,
-        precio:"$230",
-        detalle: "Sopita hecha con los productos mas frescos sarasa sarasa bla bla bla etc etc que lindo sarasa sarasa"
+        precio: "$230",
+        detalle: "Sopita hecha con los productos mas frescos sarasa sarasa bla bla bla etc etc que lindo sarasa sarasa",
+        categoria: "vegana",
     },
     {
         id: 5,
@@ -41,8 +45,9 @@ const db = [
         imagen: "./../images/carne.jpg",
         stock: 8,
         inicial: 1,
-        precio:"$300",
-        detalle: "Sopita hecha con los productos mas frescos sarasa sarasa bla bla bla etc etc que lindo sarasa sarasa"
+        precio: "$300",
+        detalle: "Sopita hecha con los productos mas frescos sarasa sarasa bla bla bla etc etc que lindo sarasa sarasa",
+        categoria: "novegana",
     },
     {
         id: 6,
@@ -50,8 +55,9 @@ const db = [
         imagen: "./../images/calabaza.jpg",
         stock: 14,
         inicial: 1,
-        precio:"$240",
-        detalle: "Sopita hecha con los productos mas frescos sarasa sarasa bla bla bla etc etc que lindo sarasa sarasa"
+        precio: "$240",
+        detalle: "Sopita hecha con los productos mas frescos sarasa sarasa bla bla bla etc etc que lindo sarasa sarasa",
+        categoria: "novegana",
     },
     {
         id: 7,
@@ -59,8 +65,9 @@ const db = [
         imagen: "./../images/champinones.jpg",
         stock: 9,
         inicial: 1,
-        precio:"$290",
-        detalle: "Sopita hecha con los productos mas frescos sarasa sarasa bla bla bla etc etc que lindo sarasa sarasa"
+        precio: "$290",
+        detalle: "Sopita hecha con los productos mas frescos sarasa sarasa bla bla bla etc etc que lindo sarasa sarasa",
+        categoria: "vegana",
     },
     {
         id: 8,
@@ -68,17 +75,19 @@ const db = [
         imagen: "./../images/choclo.jpg",
         stock: 11,
         inicial: 1,
-        precio:"$240",
-        detalle: "Sopita hecha con los productos mas frescos sarasa sarasa bla bla bla etc etc que lindo sarasa sarasa"
+        precio: "$240",
+        detalle: "Sopita hecha con los productos mas frescos sarasa sarasa bla bla bla etc etc que lindo sarasa sarasa",
+        categoria: "vegana",
     },
     {
         id: 9,
         nombre: "Sopita de Espinacas",
         imagen: "./../images/espinacas.jpg",
-        stock:  9,
+        stock: 9,
         inicial: 1,
-        precio:"$230",
-        detalle: "Sopita hecha con los productos mas frescos sarasa sarasa bla bla bla etc etc que lindo sarasa sarasa"
+        precio: "$230",
+        detalle: "Sopita hecha con los productos mas frescos sarasa sarasa bla bla bla etc etc que lindo sarasa sarasa",
+        categoria: "novegana",
     },
     {
         id: 10,
@@ -86,8 +95,9 @@ const db = [
         imagen: "./../images/zanahorias.jpg",
         stock: 8,
         inicial: 1,
-        precio:"$240",
-        detalle: "Sopita hecha con los productos mas frescos sarasa sarasa bla bla bla etc etc que lindo sarasa sarasa"
+        precio: "$240",
+        detalle: "Sopita hecha con los productos mas frescos sarasa sarasa bla bla bla etc etc que lindo sarasa sarasa",
+        categoria: "vegana",
     }
     ,
     {
@@ -96,8 +106,9 @@ const db = [
         imagen: "./../images/cebolla.jpg",
         stock: 10,
         inicial: 1,
-        precio:"$290",
-        detalle: "Sopita hecha con los productos mas frescos sarasa sarasa bla bla bla etc etc que lindo sarasa sarasa"
+        precio: "$290",
+        detalle: "Sopita hecha con los productos mas frescos sarasa sarasa bla bla bla etc etc que lindo sarasa sarasa",
+        categoria: "novegana",
     }
     ,
     {
@@ -106,8 +117,9 @@ const db = [
         imagen: "./../images/remolacha.jpg",
         stock: 15,
         inicial: 1,
-        precio:"$290",
-        detalle: "Sopita hecha con los productos mas frescos sarasa sarasa bla bla bla etc etc que lindo sarasa sarasa"
+        precio: "$290",
+        detalle: "Sopita hecha con los productos mas frescos sarasa sarasa bla bla bla etc etc que lindo sarasa sarasa",
+        categoria: "vegana",
     }
 ]
 

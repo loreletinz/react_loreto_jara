@@ -1,23 +1,31 @@
-import React , { useState, useEffect } from "react";
-import ItemList from './../itemList/itemlist';
+import React, { useState, useEffect } from "react";
+import ItemList from './../itemList/ItemList';
 import db from "../../db/db";
+import { useParams } from 'react-router-dom';
 
-const ItemListContainer = (props)=> {
-    var cart = 0;
-    const onAdd = (items, itemTitle) => {
-		cart = cart + items;	
-	};
-    const [productos, setProductos] = useState([]); 
-    useEffect (() => {
+
+const ItemListContainer = (props) => {
+    const { id } = useParams()
+    const [productos, setProductos] = useState([]);
+    const getItem = new Promise((resolve, reject) => {
         setTimeout(() => {
-            setProductos(db);
-        }, 1000);
-    }, []); 
+            if (id) {
+                resolve(db.filter(item => item.categoria === id))    
+            } else {
+                resolve(db);
+            }
+
+        }, 2000);
+    });
+    useEffect(() => {
+        getItem.then(res => { setProductos(res) }).catch(err => { console.log(err) })
+    }, [id])
+
     return (
         <>
-            <ItemList productos={productos} onAdd={onAdd} />
+            <ItemList productos={productos} />
         </>
-    ); 
+    );
 }
 
 export default ItemListContainer;   

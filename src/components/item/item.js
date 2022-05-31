@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import '../Count/count.css';
 import "./item.css"
+import Count from "../Count/Count";
 
 export default function Item(props) {
+    let itemsEnCarrito = 0;
+	const onAdd = (items, itemTitle) => {
+		itemsEnCarrito = itemsEnCarrito + items;
+    }
     return (
         <>
+        
             <section className="main-container">
                 <div className="card-container">
                     <div className="product-card">
@@ -18,6 +23,11 @@ export default function Item(props) {
                         </div> 
                     </div>
                 </div>
+                <Count 
+                    stock={props.stock}
+                    inicial={props.inicial}
+                    onAdd={onAdd}
+                />
             </section>
         </>
     );

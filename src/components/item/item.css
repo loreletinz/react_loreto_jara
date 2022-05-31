@@ -20,9 +20,11 @@
 .main-container .card-container .product-card .product-info div p:nth-child(1) {
   font-weight: bold;
   font-size: 18px;
+  margin: 0;
 }
 .main-container .card-container .product-card .product-info div p:nth-child(2) {
   font-size: 20px;
+  margin: 0;
 }
 .descripcionDetalle {
   width: 80%;

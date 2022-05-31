@@ -26,7 +26,7 @@ export default function Count({stock, inicial, onAdd}) {
                     </figure>
                 </div>
                 <div className="contenedor-boton">
-                    <button className="agregar"> Agregar al carrito</button>
+                    <button className="agregar" onClick={() =>onAdd(itemCount)}> Agregar al carrito</button>
                 </div>  
             </div> 
         </>

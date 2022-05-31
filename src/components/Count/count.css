@@ -1,5 +1,6 @@
 .contadores {
   flex-direction: column;
+  width: 100%;
 }
 .contadores figure {
   margin-bottom: 20px;

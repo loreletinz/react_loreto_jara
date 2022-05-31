@@ -1,43 +1,34 @@
 import React, { useEffect, useState } from 'react';
-import ItemDetail from './../itemdetail/itemdetail';
+import ItemDetail from '../itemdetail/ItemDetail';
 import './itemdetailcontainer.css'
 import { useParams } from 'react-router-dom';
 import db from '../../db/db';
-import Count from '../Count/count';
 
-const ItemDetailContainer = (props) => {
-    const {id} = useParams ()
+const ItemDetailContainer = () => {
+    const { id } = useParams()
+
     const [item, setItem] = useState([]);
-    const [stock, setStock] = useState([])
-    const [loading, setLoading] = useState(true)
-    const getItem = new Promise((resolve, reject) => {
+    const getItem = new Promise((resolve) => {
         setTimeout(() => {
             resolve(db.find( item => item.id === Number(id) ))
-
         }, 2000);
     });
     useEffect(() => {
-        getItem.then(res=>{setItem(res)}).catch(err=>{console.log(err)})
-    })
-    
-    var itemsEnCarrito = 0;
-	const onAdd = (items, itemTitle) => {
-		itemsEnCarrito = itemsEnCarrito + items;
-    }
-console.log(item)
-	return(
-        <div  className="detalle">
+        getItem
+            .then(res => { setItem(res) })
+            .catch(err => { console.log(err) })
+    }, [id])
+    console.log(item.categoria)
+    return (
+        <div className="detalle">
             <div className="ItemDetail">
                 <ItemDetail
                     nombre={item.nombre}
                     imagen={item.imagen}
                     precio={item.precio}
                     detalle={item.detalle}
-                />  
-                <Count 
                     stock={item.stock}
                     inicial={item.inicial}
-                    onAdd={onAdd}
                 />
             </div>
         </div>

@@ -3,16 +3,19 @@ import CartWidget from "./cartwidget/CartWidget";
 import { Link } from "react-router-dom";
 import './navbar.css';
 
-const NavBar = () => { 
-    const categorias = ['Sopitas', 'Arma tu Sopita', 'Zonas de Entrega'];
-    return(
+const NavBar = () => {
+    const categorias = [{ nombre: 'Vegana', categoria: 'vegana' }, { nombre: 'No Vegana', categoria: 'novegana' }] /* ['Sopitas', 'vegana', 'novegana'] */;
+    return (
         <>
             <nav>
                 <ul>
                     <Link to={`/`}>
                         <img src="./../images/icon.png" />
                     </Link>
-                    {categorias && categorias.map((item, i) => <li key={i}><a href="#">{item}</a></li>)}
+                    <Link to={`/`}>
+                        <li>Sopitas</li>
+                    </Link>
+                    {categorias.map((item, i) => <Link key={i} to={`/categoria/${item.categoria}`}><li>{item.nombre}</li></Link>)}
                     <CartWidget />
                 </ul>
             </nav>
