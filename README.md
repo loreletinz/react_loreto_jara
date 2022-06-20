@@ -1,9 +1,9 @@
 # Sopitas
 
-Primera Entrega 
+
 
 ## De que se trata
-Eccomerce de sopas, por ahora se puede acceder a cada detalle de producto y el listado completo de los mismos, no se filtra por categoria ya que se trata de un solo producto, en el futuro se podra procesar compra y si es posible, utilizar los menus del navbar para pedidos personalizados y complementar con mapas de entrega.
+Eccomerce de sopas, por ahora se puede acceder a cada detalle de producto y el listado completo de los mismos, no filtra por categoria porque falló, tambien el carrito recoje todos los productos y los suma, se cierra la venta apretando el carrito y se despliega un modal con el listado de los productos para adquirir y un formulario de contacto del mismo.
 
 
 
