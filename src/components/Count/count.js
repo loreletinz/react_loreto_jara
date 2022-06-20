@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from "react";
 import './count.css';
+import { CarritoContext } from "../../context/Context";
 
-export default function Count({stock, inicial, onAdd}) {
+export default function Count({stock, inicial, onAdd, item}) {
+    const { 
+        agregarAlCarrito
+    }= React.useContext(CarritoContext);
 	const [itemCount, setCount] = useState(0);
     function SumarItem() {
 		setCount(itemCount + 1);
@@ -26,7 +30,7 @@ export default function Count({stock, inicial, onAdd}) {
                     </figure>
                 </div>
                 <div className="contenedor-boton">
-                    <button className="agregar" onClick={() =>onAdd(itemCount)}> Agregar al carrito</button>
+                    <button className="agregar" onClick={() =>agregarAlCarrito(item, itemCount)}> Agregar al carrito</button>
                 </div>  
             </div> 
         </>

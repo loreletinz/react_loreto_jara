@@ -1,6 +1,7 @@
 .contadores {
   flex-direction: column;
-  width: 100%;
+  width: 80%;
+  margin-left: 5%;
 }
 .contadores figure {
   margin-bottom: 20px;
@@ -69,6 +70,6 @@
   border-color: #74AC72;
   font-size: 16px;
   font-weight: 500;
-  width: 85%;
+  width: 100%;
   margin-top: 5px;
 }

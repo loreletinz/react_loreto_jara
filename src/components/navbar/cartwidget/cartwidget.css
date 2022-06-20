@@ -14,3 +14,6 @@
   color: white;
   padding: 2px;
 }
+a {
+  cursor: pointer;
+}

@@ -5,6 +5,7 @@
 }
 .main-container .card-container .product-card {
   width: 300px;
+  display: inline-block;
 }
 .main-container .card-container .product-card img {
   width: 280px;

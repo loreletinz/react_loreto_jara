@@ -18,7 +18,6 @@ const ItemDetailContainer = () => {
             .then(res => { setItem(res) })
             .catch(err => { console.log(err) })
     }, [id])
-    console.log(item.categoria)
     return (
         <div className="detalle">
             <div className="ItemDetail">

@@ -4,13 +4,12 @@ import Count from '../Count/Count';
 
 
 const ItemDetail = (props) => {
-    let itemsEnCarrito = 0;
-	const onAdd = (items, itemTitle) => {
-		itemsEnCarrito = itemsEnCarrito + items;
-    }
 
 	return (
-		<div className="ProductoDetalle-detalle">
+        <div className="ProductoDetalle-detalle">
+            {props.loading ? (
+                <div class="lds-heart"><div></div></div>
+            ) : (
             <section className="main-container-detalle">
                 <div className="card-container-detalle">
                     <div className="product-card-detalle">
@@ -24,14 +23,15 @@ const ItemDetail = (props) => {
                     </div>
                 </div>
                 <div className="descripcionDetalle">{props.detalle}</div>
-                <Count
+                <Count 
                     stock={props.stock}
                     inicial={props.inicial}
-                    onAdd={onAdd}
+                    item={props}
                 />
             </section>
-		</div>
-	);
+            )}
+        </div>
+    )
 }
 
 export default ItemDetail;
